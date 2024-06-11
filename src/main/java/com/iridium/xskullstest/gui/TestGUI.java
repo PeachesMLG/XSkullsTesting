@@ -21,8 +21,7 @@ public class TestGUI implements GUI {
     @Override
     public void addContent(Inventory inventory) {
         for (int i = 0; i < 54; i++) {
-            int slot = i;
-            SkullUtils.getSkull(Usernames.usernames.get(slot)).thenAccept(itemStack -> inventory.setItem(slot, itemStack));
+            inventory.setItem(i, SkullUtils.getSkull(Usernames.usernames.get(i)));
         }
     }
 
