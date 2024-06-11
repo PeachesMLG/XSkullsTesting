@@ -1,0 +1,6 @@
+name: XSkullsTest
+version: ${version}
+description: Testing XSkulls
+main: com.iridium.xskullstest.XSkullsTest
+api-version: '1.13'
+author: Peaches_MLG
